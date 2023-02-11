@@ -1,0 +1,80 @@
+<html>
+    <head>  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    </head>
+
+    <script src="controlweb.js">
+        
+     </script>
+    <body onload="showinfoforemployee();alertaction()">
+        <div>
+        
+            <!--headline-->
+  <div class="jumbotron text-center" style="margin: 30px;">
+      <h1 class="display-5" id="h3"></h1>
+    </div>
+
+    <div> &nbsp;&nbsp; In that page you have all the information about different employees and 8 option to choose, every choise will take you to another page or will make difrrent effect, 
+        the options is:
+    </div>
+    <br>
+    <ul>
+        <li>Edit - if you want to edit employee.</li>
+        <li >Delete - if you want to delete the employee, attention - delete button will delete information from related tables .</li>
+        <li >Add shift- if you want to add new shift for specific employee.</li>
+        <li >Add employee- if you want to add new employee.</li>
+        <li >Add new shift for new employee- if you want to add new shift for new employee.</li>
+        <li >Search- if you want to search employee by first name / last name / department id.</li>
+        <li>Home page- if you want to get back home page.</li>
+        <li >Log-in page- if you want to startover.</li>
+      </ul>
+      <br>
+      <div class="input-group flex-nowrap" style="width: 400px">
+        &nbsp;&nbsp;
+        <span class="input-group-text" id="">Enter text</span>
+        <input type="text" class="form-control" placeholder="text" id="text" aria-label="text" aria-describedby="addon-wrapping" >
+        &nbsp;&nbsp;  
+        <button type="button" class="btn btn-light" onclick="search()">search</button>
+        
+      </div>
+        <br>
+<table class="table table-striped">
+    <tr><th>employee id</th><th>first name</th><th>last name</th><th>start work year</th><th>department id</th><th>date shift</th>
+        <th>start shift</th><th>end shift</th><th>edit</th><th>delete</th><th>add shift</th></tr>
+    <tbody id="tbody">
+    </tbody>
+  </table>
+  <br>
+  &nbsp;&nbsp;
+  <button type="button" onclick="addemp()" class="btn btn-dark">if you want to add employee - click here</button>
+  &nbsp;&nbsp;
+  <button type="button" onclick="addemps()" class="btn btn-dark">if you want to add shift for new employee - click here</button>
+  &nbsp;&nbsp;
+  <button type="button" onclick="empinfo()" class="btn btn-dark">for only employees information - click here</button>
+  &nbsp;&nbsp;
+<button type="button" onclick="homepage()" class="btn btn-dark">for Home page- click here</button><br><br>
+  &nbsp;&nbsp;
+  <button type="button" onclick="back()" class="btn btn-dark">for Log-in page- click here</button>
+<br>
+<br>
+
+  
+  
+<style>
+    body {
+      background-image: url(background2.png);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+    </style>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" 
+integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+
+    </body>
+</html>

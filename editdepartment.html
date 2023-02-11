@@ -1,0 +1,55 @@
+<html>
+    <head>  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    </head>
+
+    <script src="controlweb.js">
+     
+     </script>
+    <body onload="showdataforeditdep();alertaction()">
+        <div>
+            
+                <!--headline-->
+      <div class="jumbotron text-center" style="margin: 30px;">
+          <h1 class="display-5" id="h3"></h1>
+        </div>
+        <div class="input-group input-group-sm mb-3" style="width: 400px"> 
+            &nbsp;&nbsp;
+            Id : &nbsp;<input type="number" class="form-control" class="input-group-text" id="id" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+        </div>
+        <div class="input-group input-group-sm mb-3" style="width: 400px"> 
+            &nbsp;&nbsp;
+            Name : &nbsp;<input type="text" class="form-control" class="input-group-text" id="name" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+        </div>
+        <div class="input-group input-group-sm mb-3" style="width: 400px"> 
+            &nbsp;&nbsp;
+            Manager id : &nbsp;<input type="text" class="form-control" class="input-group-text" id="manager" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+        </div>
+        <div class="input-group input-group-sm mb-3" style="width: 400px"> 
+            &nbsp;&nbsp;
+            Employees amount : &nbsp;<input type="text" class="form-control"  class="input-group-text" id="emp" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+        </div>
+      
+&nbsp;&nbsp; <button type="button" onclick="updatedep()" class="btn btn-dark">Update</button>  <br/> <br/>
+<br>
+&nbsp;&nbsp;
+<button type="button" onclick="homepage()" class="btn btn-dark">for Home page- click here</button><br><br>
+&nbsp;&nbsp; <button type="button" onclick="back()" class="btn btn-dark">for Log-in page- click here</button>  <br/> 
+
+<style>
+    body {
+      background-image: url(background2.png);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+    </style>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" 
+integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+    </body>
+</html>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="projectModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="departmenttab">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="manager" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="numofemployees" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="employeetab">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="firstname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="lastname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="startworkyear" Type="Int32" Nullable="false" />
+    <Property Name="departmentid" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="empshifttab">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="employeeid" Type="Int32" Nullable="false" />
+    <Property Name="shiftid" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="shifttab">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="startshift" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="endshift" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="usertab">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fullname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="username" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="password" Type="Int32" Nullable="false" />
+    <Property Name="numofaction" Type="Int32" Nullable="false" />
+    <Property Name="dailyactions" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="projectEntities2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="departmenttab" EntityType="Self.departmenttab" />
+    <EntitySet Name="employeetab" EntityType="Self.employeetab" />
+    <EntitySet Name="empshifttab" EntityType="Self.empshifttab" />
+    <EntitySet Name="shifttab" EntityType="Self.shifttab" />
+    <EntitySet Name="usertab" EntityType="Self.usertab" />
+  </EntityContainer>
+</Schema>

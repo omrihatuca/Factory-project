@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="projectModelStoreContainer" CdmEntityContainer="projectEntities2">
+    <EntitySetMapping Name="departmenttab">
+      <EntityTypeMapping TypeName="projectModel.departmenttab">
+        <MappingFragment StoreEntitySet="departmenttab">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="manager" ColumnName="manager" />
+          <ScalarProperty Name="numofemployees" ColumnName="numofemployees" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="employeetab">
+      <EntityTypeMapping TypeName="projectModel.employeetab">
+        <MappingFragment StoreEntitySet="employeetab">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="firstname" ColumnName="firstname" />
+          <ScalarProperty Name="lastname" ColumnName="lastname" />
+          <ScalarProperty Name="startworkyear" ColumnName="startworkyear" />
+          <ScalarProperty Name="departmentid" ColumnName="departmentid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="empshifttab">
+      <EntityTypeMapping TypeName="projectModel.empshifttab">
+        <MappingFragment StoreEntitySet="empshifttab">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="employeeid" ColumnName="employeeid" />
+          <ScalarProperty Name="shiftid" ColumnName="shiftid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="shifttab">
+      <EntityTypeMapping TypeName="projectModel.shifttab">
+        <MappingFragment StoreEntitySet="shifttab">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="startshift" ColumnName="startshift" />
+          <ScalarProperty Name="endshift" ColumnName="endshift" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="usertab">
+      <EntityTypeMapping TypeName="projectModel.usertab">
+        <MappingFragment StoreEntitySet="usertab">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="fullname" ColumnName="fullname" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="numofaction" ColumnName="numofaction" />
+          <ScalarProperty Name="dailyactions" ColumnName="dailyactions" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
